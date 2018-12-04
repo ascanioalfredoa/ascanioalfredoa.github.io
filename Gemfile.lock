@@ -120,9 +120,9 @@ GEM
       thor
       thread_safe
     public_suffix (3.0.2)
-    rack (1.6.9)
+    rack (>= 1.6.11)
     rack-test (0.6.3)
-      rack (>= 1.0)
+      rack (>= 1.6.11)
     rails (4.2.10)
       actionmailer (= 4.2.10)
       actionpack (= 4.2.10)
