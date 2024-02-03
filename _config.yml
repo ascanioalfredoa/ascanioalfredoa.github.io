@@ -107,12 +107,12 @@ author:
   name             : "Alfredo Ascanio"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a Ph.D. candidate in Ecology, Evolution, and Environmental Biology (EEEB) at Miami University, in Oxford, Ohio, U.S"
-  location         : "Somewhere"
-  email            :
+  location         : "Oxford, OH, U.S.A"
+  email            : #ascanio.alfredoa@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "ascanio.alfredoa@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/ascanioalfredoa"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
