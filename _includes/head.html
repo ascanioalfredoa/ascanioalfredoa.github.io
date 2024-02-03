@@ -1,66 +1,25 @@
-    <head>
+<meta charset="utf-8">
 
-        <title>Alfredo Ascanio CV</title>
+{% include seo.html %}
 
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <meta name="referrer" content="origin" />
+{% unless site.atom_feed.hide %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
 
-        <meta name="description" content="Welcome to my page! Here you can see my CV and explore the things that I do."/>
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS | bootstrap -->
-        <!-- Credits: http://getbootstrap.com/ -->
-        <link  rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
 
-        <!-- CSS | font-awesome -->
-        <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
-        <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome2.min.css" />
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-        <!-- CSS | animate -->
-        <!-- Credits: http://daneden.github.io/animate.css/ -->
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" />
-
-        <!-- CSS | Normalize -->
-        <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
-        <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css" />
-        
-        <!-- CSS | Colors -->
-        <link rel="stylesheet" type="text/css" href="assets/css/colors/lightseagreen.css" id="colors-style" />
-        <link rel="stylesheet" type="text/css" href="assets/css/switcher.css" />
-        
-        <!-- CSS | Style -->
-        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-
-        <!-- CSS | prettyPhoto -->
-        <!-- Credits: http://www.no-margin-for-errors.com/ -->
-        <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css"/> 
-
-        <!-- CSS | Google Fonts -->
-        <link href='https://fonts.useso.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon-16.png">
-
-        <!--[if IE 7]>
-                <link rel="stylesheet" type="text/css" href="assets/css/icons/font-awesome-ie7.min.css"/>
-        <![endif]-->
-
-        <style>
-            @media only screen and (max-width : 991px){
-                .resp-vtabs .resp-tabs-container {
-                    margin-left: 13px;
-                }
-            }
-            
-            @media only screen and (min-width : 800px) and (max-width : 991px){
-                .resp-vtabs .resp-tabs-container {
-                    margin-left: 13px;
-                    width:89%;
-                }
-            }       
-
-        </style>
-
-    </head>
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
