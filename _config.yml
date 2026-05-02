@@ -107,28 +107,25 @@ analytics:
 author:
   name             : "Alfredo Ascanio"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Ph.D. candidate in Ecology, Evolution, and Environmental Biology (EEEB) at Miami University, in Oxford, Ohio, U.S"
-  location         : "Oxford, OH, U.S.A"
+  bio              : "Postdoctoral Research Associate in Dr. Xiao Feng’s lab (Quantitative Ecology and Biogeography) at UNC Chapel Hill. I earned my Ph.D. from Miami University in December 2025."
+  location         : "Chapel Hill, NC, U.S.A"
   email            : "ascanio.alfredoa@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: #"ascanio.alfredoa@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ascanioalfredoa"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ascanioalfredo"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0001-9987-7977"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=-33O3RoAAAAJ"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Alfredo-Ascanio"
 
 # Site Footer
 footer:
@@ -223,6 +220,11 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+
+collections:
+  updates:
+    output: true
+    permalink: /updates/:path/
 
 # Plugins (previously gems:)
 plugins:
